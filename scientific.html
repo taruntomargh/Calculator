@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="scientific-style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+   <main class="container">
+    <nav class="navbar">
+        <ul class="types">
+            <li class="type"><a href="standard.html">Standard</a></li>
+            <li class="type" ><a href="scientific.html">Scientific</a></li>
+            <li class="type"><a href="programmer.html">Programmer</a></li>
+        </ul>
+    </nav>
+    <div class="calculator">
+        <input id="display" readonly>
+        <div id="keys-scientific">
+           <button onclick="clearDisplay()" class="otherOperator">2<sup>nd</sup></button>
+           <button onclick="operation(1)" class="otherOperator">&#8508;</button>
+           <button onclick="operation(2)" class="otherOperator ">e</button>
+           <button onclick="clearDisplay()" class="operator">C</button>
+           <button onclick="clearSingleDigit()">CE</button>
+           <button onclick="operation(3)">x<sup>2</sup></button>
+           <button onclick="operation(4)">1/x</button>
+           <button onclick="operation(5)">|x|</button>
+           <button onclick="operation(6)">exp</button>
+           <button onclick="operation(7)" style="font-size: 25px;">mod</button>
+           <button onclick="operation(8)">&#8730;x</button>
+           <button onclick="addToDisplay('&#40')">&#40;</button>
+           <button onclick="addToDisplay('&#41')">&#41;</button>
+           <button onclick="operation(9)">n!</button>
+           <button onclick="addToDisplay('/')">/</button>
+           <button onclick="operation(10)">x<sup>y</sup></button>
+           <button onclick="addToDisplay('7')">7</button>
+           <button onclick="addToDisplay('8')">8</button>
+           <button onclick="addToDisplay('9')">9</button>
+           <button onclick="addToDisplay('*')" class="operator">*</button>
+           <button onclick="operation(11)">10<sup>x</sup></button>
+           <button onclick="addToDisplay('4')">4</button>
+           <button onclick="addToDisplay('5')">5</button>
+           <button onclick="addToDisplay('6')">6</button>
+           <button onclick="addToDisplay('-')" class="operator">-</button>
+           <button onclick="operation(12)">log</button>
+           <button onclick="addToDisplay('1')">1</button>
+           <button onclick="addToDisplay('2')">2</button>
+           <button onclick="addToDisplay('3')">3</button>
+           <button onclick="addToDisplay('+')" class="operator">+</button>
+           <button onclick="operation(12)">ln</button>
+           <button onclick="operation(13)">+/-</button>
+           <button onclick="addToDisplay('0')">0</button>
+           <button onclick="addToDisplay('.')">.</button>
+           <button onclick="calculate()" class="operator">=</button>
+        </div>
+    </div>
+   </main>
+</body>
+<html>

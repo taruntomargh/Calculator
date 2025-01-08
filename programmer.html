@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="programmer-style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+   <main class="container">
+    <p>Programmer section is currently unavailable</p>
+    <nav class="navbar">
+        <ul class="types">
+            <li class="type"><a href="standard.html">Standard</a></li>
+            <li class="type" ><a href="scientific.html">Scientific</a></li>
+            <li class="type"><a href="programmer.html">Programmer</a></li>
+        </ul>
+    </nav>
+    <div class="calculator">
+        <input id="display" readonly>
+        <div id="keys-programmer">
+           <button onclick="clearDisplay()" class="otherOperator ">A</button>
+           <button  class="otherOperator ">&lt;&lt;</button>
+           <button onclick="addToDisplay('%')" class="otherOperator ">&gt;&gt;</button>
+           <button onclick="addToDisplay('/')" class="operator">C</button>
+           <button onclick="clearSingleDigit()">CE</button>
+           <button onclick="addToDisplay('8')">B</button>
+           <button onclick="addToDisplay('8')">&#40;</button>
+           <button onclick="addToDisplay('8')">&#41;</button>
+           <button onclick="addToDisplay('8')">%</button>
+           <button onclick="addToDisplay('8')">/</button>
+           <button onclick="addToDisplay('8')">C</button>
+           <button onclick="addToDisplay('8')">7</button>
+           <button onclick="addToDisplay('8')">8</button>
+           <button onclick="addToDisplay('8')">9</button>
+           <button onclick="addToDisplay('8')">x</button>
+           <button onclick="addToDisplay('8')">D</button>
+           <button onclick="addToDisplay('8')">4</button>
+           <button onclick="addToDisplay('8')">5</button>
+           <button onclick="addToDisplay('9')">6</button>
+           <button onclick="addToDisplay('*')" class="operator">-</button>
+           <button onclick="addToDisplay('4')">E</button>
+           <button onclick="addToDisplay('4')">1</button>
+           <button onclick="addToDisplay('5')">2</button>
+           <button onclick="addToDisplay('6')">3</button>
+           <button onclick="addToDisplay('-')" class="operator">+</button>
+           <button onclick="addToDisplay('00')">F</button>
+           <button onclick="addToDisplay('00')">+/-</button>
+           <button onclick="addToDisplay('0')">0</button>
+           <button onclick="addToDisplay('.')">.</button>
+           <button onclick="calculate()" class="operator">=</button>
+        </div>
+    </div>
+   </main>
+</body>
+<html>
